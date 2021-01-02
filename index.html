@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drink website</title>
+    
+        <link rel="stylesheet" href="css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="css/sample.css">
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://use.typekit.net/puu8vtn.css">
+        <script>
+  (function(d) {
+    var config = {
+      kitId: 'die0cyj',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</head>
+<body>
+    <header>
+      <div class="nav">
+        
+        <div class="cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        
+        <div class="logo">
+          <img src="images/drinklogo.png"></img>
+        </div>
+        
+      
+        <div class="bar" id="bar_trigger">
+          <svg class=charts xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="48" width="48"><g class="nc-icon-wrapper js-transition-icon" data-effect="scale" data-event="click"><g class="js-transition-icon__state" style=""><defs><style>.cls-1,.cls-2{fill:none;}.cls-2{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>bars_24</title><g id="レイヤー_2" data-name="レイヤー 2"><g id="Rectangle"><rect class="cls-1" width="48" height="48"></rect></g><g id="icon_data"><line class="cls-2" x1="10" y1="12" x2="38" y2="12"></line><line class="cls-2" x1="10" y1="24" x2="38" y2="24"></line><line class="cls-2" x1="10" y1="36" x2="38" y2="36"></line></g></g></g><g class="js-transition-icon__state" style="display: none;" aria-hidden="true"><defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs><title>icn_7</title><line class="a" x1="12" y1="12.0073" x2="36" y2="36.0073"></line><line class="a" x1="12" y1="36.0073" x2="36" y2="12.0073"></line></g></g><script>!function(){"use strict";if(!window.requestAnimationFrame){var a=null;window.requestAnimationFrame=function(t,i){var e=(new Date).getTime();a||(a=e);var s=Math.max(0,16-(e-a)),n=window.setTimeout(function(){t(e+s)},s);return a=e+s,n}}function r(t,i,e,s){return 1&gt;(t/=s/2)?e/2*t*t*t*t+i:-e/2*((t-=2)*t*t*t-2)+i}function e(t){return t?[1,0]:[0,1]}function t(t){this.element=t,this.svg=function t(i){var e=i.parentNode;if("svg"!==e.tagName)e=t(e);return e;}(this.element),this.getSize(),this.states=this.element.querySelectorAll(".js-transition-icon__state"),this.time={start:null,total:200},this.status={interacted:!1,animating:!1},this.animation={effect:this.element.getAttribute("data-effect"),event:this.element.getAttribute("data-event")},this.init()}t.prototype.getSize=function(){var t=this.svg.getAttribute("viewBox");this.size=t?{width:t.split(" ")[2],height:t.split(" ")[3]}:this.svg.getBoundingClientRect()},t.prototype.init=function(){var t=this;this.svg.addEventListener(t.animation.event,function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},t.prototype.triggerAnimation=function(t){var i=this.getProgress(t);this.animateIcon(i),this.checkProgress(i)},t.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},t.prototype.checkProgress=function(t){if(this.time.total&gt;t)window.requestAnimationFrame(this.triggerAnimation.bind(this));else{this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null;var i=e(this.status.interacted);this.states[i[0]].removeAttribute("aria-hidden"),this.states[i[1]].setAttribute("aria-hidden","true")}},t.prototype.animateIcon=function(t){if(t&gt;this.time.total){t=this.time.total;}if(0&gt;t){t=0;};var i=e(this.status.interacted);this.states[i[0]].style.display=t&gt;this.time.total/2?"none":"block",this.states[i[1]].style.display=t&gt;this.time.total/2?"block":"none","scale"==this.animation.effect?this.scaleIcon(t,i[0],i[1]):this.rotateIcon(t,i[0],i[1])},t.prototype.scaleIcon=function(t,i,e){var s=r(Math.min(t,this.time.total/2),1,-.2,this.time.total/2).toFixed(2),n=r(Math.max(t-this.time.total/2,0),.2,-.2,this.time.total/2).toFixed(2);this.states[i].setAttribute("transform","translate("+this.size.width*(1-s)/2+" "+this.size.height*(1-s)/2+") scale("+s+")"),this.states[e].setAttribute("transform","translate("+this.size.width*n/2+" "+this.size.height*n/2+") scale("+(1-n)+")")},t.prototype.rotateIcon=function(t,i,e){var s=r(t,0,180,this.time.total).toFixed(2);this.states[i].setAttribute("transform","rotate(-"+s+" "+this.size.width/2+" "+this.size.height/2+")"),this.states[e].setAttribute("transform","rotate("+(180-s)+" "+this.size.width/2+" "+this.size.height/2+")")};var i=document.querySelectorAll(".js-transition-icon");if(i)for(var s=0;i.length&gt;s;s++)new t(i[s])}();</script>
+  </svg>
+      
+       
+        </div>
+      
+        </div>
+      
+      
+      <div class="ham">
+          <ul>
+            <li><a href="#service">FEATURE</a></li>
+            <li><a href="#aboutus">SHOPS</a></li>
+            <li><a href="#people">STORY</a></li>
+            <li><a href="#contact">FAQ</a></li>
+          </ul>
+        </div>  
+        
+    </header>
+    
+    
+    
+    <section id="main">
+        
+        
+        
+        <div class="text-center main-img">
+            <img src="images/bottle.png" alt="" class="hero-right ">
+        </div>
+
+        <div class="text-innner">
+        <h2 class="catchcopy en down">Need a Reflesh?</h2>
+        <p><span>次世代型</span>リフレッシュドリンク</p>
+        </div>
+        
+        <a class="tag" href='htttps://.pngtree.com/so/バルーン'>バルーン pngから pngtree.com</a>
+        
+        <div class="bubble">
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+        </div>
+        
+        
+        <div class="feature">
+            <h3 class="left">今、必要なのは<br>「リラクゼーション」</h3>
+            
+            <div class="flex">
+            <div class="flex-left up-sp">
+            <p class="txt">あらゆる場でエナジーが必要とされるストレス社会。現代人にとって本当に必要なのは、心と身体を落ち着かせる一時のリラクゼーションのはず。</p>
+            <p class="txt">オリジナルシトラスフレーバーと独自のリラックス成分で、あなたの日々のオフタイムを支える次世代型リフレッシュドリンク「Mythos」</p>
+            </div>
+            
+            <div class="flex-right">
+                <img class="one" src="images/bottle.png"></img>
+                <img class="two" src="images/bottle.png"></img>
+            </div>
+        </div>
+        
+        
+        <div class="bubble">
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+          <img src="images/bubble.png"></img>
+        </div>
+        <div class="skewed"></div>
+        
+        </div>
+        
+        
+        
+        
+    </section>
+    
+    
+    
+    <section id="feature">
+        <div class="container">
+        <h3 class="en down">FEATURE<span class="jap">3つの特徴</span></h3>
+        
+        
+        <div class="cards">
+        <div class="card up left">
+            
+            <div class="img-cover">
+            <img src="images/dance.png" alt="" class="card-image">
+            </div>
+        
+            <div class="card-txt">
+            <h4>よりクリエイティブに</h4>
+            <p class="detail">誰もがハマる爽快感×エナジーブレンドでクリエイティブなパフォーマンスをサポートします</p>
+            </div>
+        </div>
+        
+        <div class="card up2 right">
+            <div class="img-cover">
+            <img src="images/break.png" alt="" class="card-image">
+            </div>
+            
+            <div class="card-txt">
+            <h4>安らぎのひとときに</h4>
+            <p class="detail">植物由来のリラクゼーション成分と３種のアミノ酸であなたの安らぎの瞬間にプラスα</p>
+            </div>
+        </div>
+        
+        <div class="card up3 left">
+            <div class="img-cover">
+            <img src="images/work.png" alt="" class="card-image">
+            </div>
+            <div class="card-txt">
+            <h4>仕事のストレスをリセット</h4>
+            <p class="detail">落ち着きのあるシトラス系のクールダウンフレーバーが長時間ワークで疲れた頭と心をリフレッシュ。</p>
+            </div>
+        </div>
+        </div>
+        
+        </div>
+
+    </section>
+    
+    
+    
+    <section id="story">
+        
+        <div class="skewed1"></div>
+        
+        <div class="container">
+            <h3 class="en down">STORY<span class="jap">ストーリー</span></h2>
+                <div class="about-img down">
+                <img src="images/bottles.jpg" alt="">
+                </div>
+                
+                <div class="about-text">
+                    <h4 class="center">ABC社がパートナー</h4>
+                    <p>Reflesh MythosはあのABC社とパートナーシップを締結し,未だ世の中に存在しない価値を届けるドリンクとして企画・開発を行った次世代型リフレッシュドリンクです。</p>
+               
+                    <a href="" class="button up4">誕生ストーリーを見る</a>
+               </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="shops">
+    <div class="skewed3"></div>
+    <div class="container">
+            <h3 class="en down">SHOPS<span class="jap">オンラインショップ</spam></h3>
+                <div class="main-img">
+                  <img src="images/bottle.png"></img>
+                </div>
+                
+                <div class="shops-txt">
+                  <img src="images/drinklogo.png"></img>
+                  <p class="price">¥<span class="big">200</span> / 200ml</p>
+                  <div class="ingrediants">
+                  <p class="ing-txt">原材料</p>
+                  <p class="small">果糖ぶどう糖液糖（国内製造）、ぶどう果汁、オレンジ果汁、ヘンプシードエキス、ギャバ、ホップエキス／炭酸、酸味料、テアニン、香料、V.C  
+                  </p>
+                  </div>
+                </div>
+                
+                <div class="buy up2">
+                <a href="" class="button amazon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M141.9,139.75c-15.05,11.10833 -37.625,17.91667 -55.9,17.91667c-26.15833,0 -49.45,-10.39167 -67.36667,-26.51667c-1.43333,-1.43333 0,-2.86667 1.43333,-2.15c19.35,11.10833 41.20833,17.55833 65.575,17.55833c16.48333,0 37.26667,-3.58333 54.10833,-10.75c2.50833,-0.71667 4.65833,2.15 2.15,3.94167zM147.275,132.225c-1.79167,-2.50833 -12.54167,-1.075 -17.2,-0.71667c-1.43333,0 -1.79167,-1.075 -0.35833,-2.15c8.24167,-6.09167 22.21667,-4.3 23.65,-2.15c1.43333,2.15 -0.35833,16.125 -8.24167,22.575c-1.075,1.075 -2.50833,0.35833 -1.79167,-0.71667c1.79167,-4.3 5.73333,-14.33333 3.94167,-16.84167z" fill="#ffb300"></path><path d="M132.225,106.78333c-3.58333,-4.65833 -7.16667,-8.6 -7.16667,-17.55833v-29.74167c0,-12.54167 0,-23.65 -8.95833,-32.25c-7.16667,-6.80833 -18.99167,-9.31667 -28.30833,-9.31667c-19.70833,0 -36.90833,7.88333 -41.20833,30.1c-0.35833,2.50833 1.43333,3.58333 2.86667,3.94167l18.275,2.15c1.79167,0 2.86667,-1.79167 3.225,-3.58333c1.43333,-7.525 7.525,-11.10833 14.69167,-11.10833c3.94167,0 11.46667,2.15 11.46667,10.75v10.75c-11.46667,0 -23.65,0 -33.68333,4.3c-11.825,5.01667 -20.06667,15.40833 -20.06667,30.81667c0,19.70833 12.18333,29.38333 27.95,29.38333c13.25833,0 21.14167,-3.225 31.53333,-13.61667c3.225,5.01667 4.65833,7.88333 10.75,13.25833c1.43333,0.71667 3.225,0.71667 4.3,-0.35833v0c3.58333,-3.225 10.39167,-9.31667 14.33333,-12.54167c1.79167,-1.43333 1.43333,-3.58333 0,-5.375zM96.75,79.19167v0c0,7.16667 -0.35833,24.725 -17.91667,24.725c-10.75,0 -10.75,-10.75 -10.75,-10.75c0,-16.125 15.05,-17.91667 28.66667,-17.91667z" fill="#ffffff"></path></g></g></svg>Amazonで購入する</a>
+                <a href="" class="button rakuten"><img class="rakuten" src="images/rakuten.png"></img>楽天で購入する</a>
+                </div>
+                
+                
+        <div id="faq">
+            <h3 class="en center down">FAQ<span class="jap">よくある質問</span></h3>
+            <div class="question">
+            <p class="q">
+                Q.保存料や着色料は使われていますか？
+            </p>
+            <p class="answer">
+                A.保存料や着色料は一切使用していないドリンクです。自然派、健康志向の人にもオススメです。</p>
+            </div>
+            <div class="question">
+            <p class="q">
+                Q.Web以外ではどこで購入できますか？
+            </p>
+            <p class="answer">
+                A.都内コンビニ、自動販売機で取り扱いがございます。</p>
+            </div>
+            <div class="question">
+            <p class="q">
+                Q.リラクゼーション成分とはなんですか？
+            </p>
+            <p class="answer">
+                A.植物由来の原料であるテアニン、ホップ、乳酸菌由来のギャバの配合によりリラックス効果が認められています。</p>
+            </div>
+      </div>
+    </div>
+</section>
+
+
+<section id="footer">
+    <div class="container">
+                <div class="icon">
+                <a href="" class="icons"><i class="fab fa-twitter-square"></i></a>
+                <a href="" class="icons"><i class="fab fa-facebook-square"></i></a>
+                <a href="" class="icons"><i class="fab fa-instagram"></i></a>
+               </div>
+               
+               <ul class="footer-list">
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                </ul>
+               
+                   <p class="small">Copyright by Reflesh Mythos</p>
+               
+               </div>
+</section>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+       window.sr = ScrollReveal({ reset: false ,mobile: true,});
+       sr.reveal( '.left', { origin: 'left' , distance: '200px', duration: 2000 , delay:600 , opacity: 0,});
+       sr.reveal( '.down', { origin: 'top' , distance: '70%', duration: 1000 ,opacity: 0,});
+       sr.reveal( '.up', {  origin: 'bottom' , distance: '40%', duration: 1200 ,opacity: 0,});
+       sr.reveal( '.up2', { origin: 'bottom' , distance: '40%', duration: 1200,  delay:200, opacity: 0,});
+       sr.reveal( '.up3', { origin: 'bottom' , distance: '40%', duration: 1200,  delay:400 , opacity: 0,});
+       sr.reveal( '.up4', { origin: 'bottom' , distance: '50%', duration: 1300,  opacity: 0,});
+       sr.reveal( '.up-sp', { origin: 'bottom' , distance: '50%', duration: 1600, delay:600, opacity: 0,});
+       sr.reveal( '.up2-sp', { origin: 'bottom' , distance: '40%', duration: 1200, delay:500, opacity: 0,});
+       sr.reveal( '.down-pc', { origin: 'top' , distance: '70%', duration: 1300 ,opacity: 0, delay:300,mobile:false,});
+       sr.reveal( '.down-sp2', { origin: 'top' , distance: '70%', duration: 1500 ,opacity: 0, delay:500,});
+       
+$(function(){
+ $(".bar").click(function () { //class="bar"を押したら実行
+          if ($(this).hasClass('open')) {
+　　$(this).removeClass('open');
+　　$(".ham").removeClass('open');
+　} else {
+　　$(this).addClass('open');
+　　$(".ham").addClass('open');
+　}
+　});
+});      
+</script>
+
+
+</body>
+</html>

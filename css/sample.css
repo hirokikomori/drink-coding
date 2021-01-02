@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+p {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.en {
+  font-family: ff-market-web, sans-serif;
+  letter-spacing: .2px; }
+
+html {
+  font-size: 62.5%; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+/* Base
+------------------------------------------------------------*/
+body {
+  color: #0b6678;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1rem; }
+
+a {
+  text-decoration: none;
+  letter-spacing: .2; }
+  a:hover {
+    color: #0b6678;
+    text-decoration: none; }
+
+ul {
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0; }
+
+p {
+  letter-spacing: .2rem;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif; }
+
+/* Align
+------------------------------------------------------------*/
+.center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.button {
+  padding: 16px 32px;
+  border-radius: 6px;
+  background-color: #0b6678;
+  border: solid 2px #0b6678;
+  color: #fff;
+  display: block;
+  width: 60%;
+  text-align: center;
+  margin: 30px auto;
+  letter-spacing: .2rem;
+  font-size: 16px;
+  font-size: 1.6rem;
+  transition: all .2s;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
+  .button:hover {
+    color: #a8e6ed;
+    opacity: .9; }
+
+/* Header
+------------------------------------------------------------*/
+header {
+  padding: 0 5% 0 5%;
+  width: 90%;
+  height: 0px;
+  background: transparent;
+  position: relative; }
+  header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .nav .cart {
+      flex: 1;
+      z-index: 101; }
+    header .nav i {
+      font-size: 36px;
+      color: #0b6678; }
+    header .nav .logo {
+      text-align: center;
+      flex: 1;
+      padding-top: 10px;
+      z-index: 101; }
+      header .nav .logo img {
+        width: 80%; }
+    header .nav .bar {
+      flex: 1;
+      position: relative;
+      cursor: pointer;
+      text-align: right;
+      z-index: 101; }
+      header .nav .bar img {
+        width: 40px; }
+  header .ham {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: 0.4s ease-in-out;
+    transform: translateY(-100%);
+    background: #fff;
+    opacity: 0; }
+    header .ham li {
+      text-align: center;
+      padding: 10px 0; }
+      header .ham li a {
+        padding: 15px 30px;
+        color: #0b6678;
+        font-size: 16px;
+        font-size: 1.6rem;
+        display: inline-block;
+        transition: transform .2s ease, color .2s ease; }
+        header .ham li a:hover {
+          transform: translateX(4px);
+          color: #0f8ea7; }
+  header .ham.open {
+    transform: translateY(0);
+    opacity: 1; }
+
+#main {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  #main .main-img {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 120px 0 0 0; }
+    #main .main-img img {
+      width: 50%;
+      animation: float 5s infinite ease; }
+  #main .text-innner {
+    padding: 0px 5% 20px 5%;
+    text-align: center; }
+    #main .text-innner h2 {
+      font-size: 48px;
+      font-size: 4.8rem;
+      letter-spacing: .3rem;
+      font-family: ff-market-web, sans-serif;
+      transform: rotate(-5deg); }
+    #main .text-innner p {
+      font-size: 14px;
+      font-size: 1.4rem;
+      letter-spacing: 0;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 0 10px;
+      display: inline-block; }
+      #main .text-innner p span {
+        display: inline-block;
+        margin-right: 5px; }
+  #main .tag {
+    color: #fff;
+    font-size: 2px;
+    letter-spacing: 0;
+    position: absolute;
+    opacity: .8; }
+  #main .feature {
+    padding: 60px 0 100px 0;
+    position: relative; }
+    #main .feature h3 {
+      font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+      font-size: 32px;
+      font-size: 3.2rem;
+      letter-spacing: 0;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.8); }
+    #main .feature .flex {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between; }
+      #main .feature .flex .flex-left {
+        width: 70%;
+        padding: 15px; }
+        #main .feature .flex .flex-left .txt {
+          padding: 20px 0 0 5px;
+          letter-spacing: .1;
+          font-size: 14px;
+          font-size: 1.4rem; }
+      #main .feature .flex .flex-right {
+        width: 40%;
+        align-self: flex-end;
+        text-align: center; }
+        #main .feature .flex .flex-right img {
+          width: 30%; }
+        #main .feature .flex .flex-right .one {
+          transform: rotate(5deg); }
+        #main .feature .flex .flex-right .two {
+          transform: rotate(-5deg); }
+    #main .feature .skewed {
+      position: absolute;
+      bottom: -90px;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background: #fff;
+      z-index: 0;
+      transform: skewY(5deg);
+      transform-origin: top right; }
+  #main .bubble {
+    display: flex;
+    justify-content: space-around; }
+    #main .bubble img {
+      width: 15px;
+      animation: bubble 4s linear infinite; }
+      #main .bubble img:nth-child(1) {
+        width: 12px;
+        height: 12px; }
+      #main .bubble img:nth-child(2) {
+        animation-delay: 2s; }
+      #main .bubble img:nth-child(3) {
+        animation-delay: 2.5s; }
+      #main .bubble img:nth-child(4) {
+        width: 10px;
+        height: 10px;
+        animation-delay: 1s; }
+      #main .bubble img:nth-child(5) {
+        width: 7px;
+        height: 7px;
+        animation-delay: 2s; }
+      #main .bubble img:nth-child(6) {
+        width: 10px;
+        height: 10px;
+        animation-delay: 1.5s; }
+      #main .bubble img:nth-child(7) {
+        width: 20px;
+        animation-delay: 2.5s; }
+      #main .bubble img:nth-child(8) {
+        animation-delay: 1s; }
+      #main .bubble img:nth-child(10) {
+        animation-delay: .5s; }
+
+@keyframes bubble {
+  0% {
+    opacity: 0;
+    transform: translateY(0); }
+  35% {
+    opacity: 1; }
+  70% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(-90vh); } }
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+#feature {
+  background: #a8e6ed;
+  padding: 0 5% 100px 5%; }
+  #feature h3 {
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 42px;
+    font-size: 4.2rem; }
+    #feature h3 span, #feature h3 .jap {
+      font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding-left: 20px; }
+  #feature .card {
+    margin-top: 20px;
+    display: flex; }
+    #feature .card .img-cover {
+      width: 30%; }
+      #feature .card .img-cover img {
+        width: 100%; }
+    #feature .card .card-txt {
+      padding-left: 10px;
+      width: 70%; }
+      #feature .card .card-txt h4 {
+        padding: 10px 0;
+        font-size: 18px;
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
+        font-style: Italic;
+        display: inline-block; }
+        #feature .card .card-txt h4:after {
+          content: "";
+          background: #fcd251;
+          height: 2px;
+          width: 50%;
+          display: inline-block; }
+      #feature .card .card-txt .detail {
+        letter-spacing: .1rem;
+        font-size: 14px;
+        font-size: 1.4rem; }
+  #feature .left {
+    text-align: left; }
+  #feature .right {
+    flex-direction: row-reverse; }
+
+#story {
+  position: relative;
+  padding: 0px 5% 100px 5%;
+  background: #a8e6ed; }
+  #story .skewed1 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: #fff;
+    z-index: 0;
+    transform: skewY(-6deg);
+    transform-origin: top left; }
+  #story h3 {
+    font-size: 42px;
+    font-size: 4.2rem;
+    padding-bottom: 20px; }
+    #story h3 span, #story h3 .jap {
+      font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding-left: 20px; }
+  #story .about-img img {
+    width: 100%; }
+  #story .about-text h4 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    padding: 20px 0; }
+  #story .about-text p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    letter-spacing: .1rem; }
+
+#shops {
+  background-image: url("../images/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0 5% 50px 5%; }
+  #shops .skewed3 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 8%;
+    background: #fff;
+    z-index: 0;
+    transform: skewY(6deg);
+    transform-origin: top right; }
+  #shops h3 {
+    font-size: 42px;
+    font-size: 4.2rem; }
+    #shops h3 .jap {
+      font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding-left: 20px; }
+  #shops .main-img {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0 0 0; }
+    #shops .main-img img {
+      width: 30%; }
+  #shops .shops-txt {
+    text-align: center; }
+    #shops .shops-txt img {
+      width: 60%; }
+    #shops .shops-txt .price {
+      padding: 10px 0; }
+      #shops .shops-txt .price span, #shops .shops-txt .price .big {
+        font-size: 24px;
+        font-size: 2.4rem; }
+    #shops .shops-txt .ingrediants {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 2px; }
+      #shops .shops-txt .ingrediants .ing-txt {
+        padding: 5px 0;
+        border-bottom: 0.5px solid #0b6678;
+        display: inline-block; }
+      #shops .shops-txt .ingrediants .small {
+        padding: 5px 0;
+        font-size: 12px;
+        font-size: 1.2rem;
+        letter-spacing: 0; }
+  #shops .buy {
+    padding-top: 30px; }
+    #shops .buy .button {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #shops .buy .button svg {
+        width: 36px;
+        height: 36px;
+        margin-right: 5px; }
+      #shops .buy .button img, #shops .buy .button .rakuten {
+        width: 36px;
+        margin-right: 10px; }
+
+#faq {
+  padding: 40px 0 20px 0; }
+  #faq h3 {
+    padding-bottom: 20px; }
+  #faq .jap {
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding-left: 20px; }
+  #faq .question {
+    padding: 10px 0;
+    position: relative; }
+    #faq .question .q {
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 2px;
+      font-style: Italic; }
+    #faq .question .answer {
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding: 10px 0;
+      letter-spacing: 0; }
+
+@keyframes bottle {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0); } }
+#footer {
+  background: #fff;
+  padding: 10px 0; }
+  #footer .icon {
+    display: flex;
+    justify-content: center; }
+    #footer .icon .icons {
+      padding: 0 20px; }
+    #footer .icon i {
+      font-size: 36px;
+      color: #0b6678; }
+  #footer .footer-list {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; }
+    #footer .footer-list li {
+      letter-spacing: .1rem;
+      padding: 0 10px; }
+      #footer .footer-list li a {
+        color: #0b6678;
+        transition: .3s; }
+        #footer .footer-list li a:hover {
+          opacity: .8; }
+  #footer .small {
+    font-size: 10px;
+    font-size: 1rem;
+    text-align: center; }
+
+@media (min-width: 550px) {
+  p {
+    font-size: 14px;
+    font-size: 1.4rem; }
+
+  header .nav .logo img {
+    width: 40%; }
+  header .ham {
+    padding-top: 200px; }
+    header .ham li {
+      text-align: center;
+      padding: 10px 0; }
+      header .ham li a {
+        font-size: 32px;
+        font-size: 3.2rem; }
+
+  #main .main-img {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 170px 0 0 0; }
+    #main .main-img img {
+      width: 40%;
+      animation: float 5s infinite ease; }
+  #main .text-innner {
+    padding: 0px 5% 30px 5%; }
+    #main .text-innner h2 {
+      font-size: 56px;
+      font-size: 5.6rem; }
+    #main .text-innner p {
+      font-size: 16px;
+      font-size: 1.6rem; }
+  #main .feature h3 {
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-size: 36px;
+    font-size: 3.6rem;
+    padding-left: 20px; }
+  #main .feature .flex .flex-left {
+    width: 60%;
+    padding: 20px; }
+    #main .feature .flex .flex-left .txt {
+      padding: 20px 0 0 0;
+      font-size: 18px;
+      font-size: 1.8rem; }
+  #main .feature .flex .flex-right {
+    width: 30%;
+    align-self: center; }
+    #main .feature .flex .flex-right img {
+      width: 25%; }
+  #main .feature .skewed {
+    position: absolute;
+    bottom: -150px;
+    height: 25%; }
+
+  #feature {
+    background: #a8e6ed;
+    padding: 0 5% 100px 5%; }
+    #feature h3 {
+      padding-bottom: 10px;
+      position: relative;
+      font-size: 54px;
+      font-size: 5.4rem; }
+    #feature .cards {
+      padding: 0 5%; }
+      #feature .cards .card {
+        margin-top: 30px;
+        display: flex; }
+        #feature .cards .card .img-cover {
+          width: 40%; }
+          #feature .cards .card .img-cover img {
+            width: 60%; }
+        #feature .cards .card .card-txt {
+          padding: 0;
+          align-self: center; }
+          #feature .cards .card .card-txt h4 {
+            padding: 10px 0;
+            font-size: 28px;
+            font-size: 2.8rem; }
+          #feature .cards .card .card-txt .detail {
+            font-size: 18px;
+            font-size: 1.8rem; }
+      #feature .cards .right .img-cover {
+        text-align: right; }
+
+  #story {
+    padding-bottom: 130px; }
+    #story .skewed1 {
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 15%; }
+    #story h3 {
+      font-size: 54px;
+      font-size: 5.4rem;
+      padding-bottom: 20px; }
+    #story .about-img {
+      text-align: center; }
+      #story .about-img img {
+        width: 90%; }
+    #story .about-text {
+      width: 90%;
+      margin: 0 auto; }
+      #story .about-text h4 {
+        font-size: 28px;
+        font-size: 2.8rem; }
+      #story .about-text p {
+        font-size: 18px;
+        font-size: 1.8rem;
+        padding: 10px 0; }
+      #story .about-text a {
+        width: 50%; }
+
+  #shops {
+    background-position: top; }
+    #shops .skewed3 {
+      top: 0;
+      height: 10%; }
+    #shops h3 {
+      font-size: 54px;
+      font-size: 5.4rem; }
+    #shops .main-img {
+      width: 20%;
+      padding: 100px 0 0 0; }
+      #shops .main-img img {
+        width: 40%; }
+    #shops .shops-txt {
+      text-align: center;
+      padding: 0 5%; }
+      #shops .shops-txt img {
+        width: 30%; }
+      #shops .shops-txt .price {
+        padding: 30px 0;
+        font-size: 18px;
+        font-size: 1.8rem; }
+        #shops .shops-txt .price span, #shops .shops-txt .price .big {
+          font-size: 36px;
+          font-size: 3.6rem; }
+      #shops .shops-txt .ingrediants .ing-txt {
+        font-size: 18px;
+        font-size: 1.8rem; }
+      #shops .shops-txt .ingrediants .small {
+        padding: 10px 0;
+        font-size: 14px;
+        font-size: 1.4rem;
+        letter-spacing: 0; }
+    #shops .buy a {
+      width: 50%; }
+
+  #faq {
+    padding: 80px 5% 20px 5%; }
+    #faq h3 {
+      padding-bottom: 20px;
+      font-size: 54px;
+      font-size: 5.4rem; }
+    #faq .question {
+      padding: 20px 0;
+      position: relative; }
+      #faq .question .q {
+        font-size: 24px;
+        font-size: 2.4rem; }
+      #faq .question .answer {
+        font-size: 16px;
+        font-size: 1.6rem;
+        padding: 10px 0;
+        letter-spacing: 0; } }
+
+/*# sourceMappingURL=sample.css.map */
