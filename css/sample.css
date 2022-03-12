@@ -56,7 +56,9 @@ p {
   margin-right: auto; }
 
 .button {
-  padding: 16px 32px;
+  padding: 0px 32px;
+  line-height: 45px;
+  height: 45px;
   border-radius: 6px;
   background-color: #0b6678;
   border: solid 2px #0b6678;
@@ -449,7 +451,7 @@ header {
     transform: translateY(0); } }
 #footer {
   background: #fff;
-  padding: 10px 0; }
+  padding: 30px 0 15px; }
   #footer .icon {
     display: flex;
     justify-content: center; }
@@ -461,10 +463,13 @@ header {
   #footer .footer-list {
     display: flex;
     justify-content: center;
-    padding: 10px 0; }
+    padding: 30px 0;
+    flex-direction: column;
+    text-align: center; }
     #footer .footer-list li {
       letter-spacing: .1rem;
-      padding: 0 10px; }
+      padding: 0 10px;
+      margin: 10px 0; }
       #footer .footer-list li a {
         color: #0b6678;
         transition: .3s; }

@@ -95,7 +95,9 @@ p{
 
 
 .button{
-    padding: 16px 32px;
+    padding: 0px 32px;
+    line-height: 45px;
+    height: 45px;
     border-radius:6px;
     background-color:$baseColor;
     border:solid 2px $baseColor;
@@ -602,7 +604,7 @@ h3{
 //footer{
   #footer{
     background:#fff;
-    padding:10px 0;
+    padding:30px 0 15px;
     .icon{
     display:flex;
     justify-content:center;
@@ -617,10 +619,13 @@ h3{
   .footer-list{
     display:flex;
     justify-content:center;
-    padding:10px 0;
+    padding:30px 0;
+    flex-direction: column;
+    text-align: center;
       li{
         letter-spacing:.1rem;
         padding:0 10px;
+        margin: 10px 0;
         a{
           color:$fontColor;
           transition:.3s;
